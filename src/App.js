@@ -1,8 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import "./components/CardWidget.css";
+import "./components/CartWidget.css";
 import "./components/Navbar.css";
-import "./components/ItemListContainer.css"
+import "./components/ItemListContainer.css";
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
@@ -12,8 +12,9 @@ function App() {
                 <Navbar/>
             </header>
             
+            <div className="body">
             <ItemListContainer greeting = "Catálogo"/>
-        
+            </div>
         </div>
     );
 }
