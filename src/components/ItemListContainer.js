@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemListContainer = (props) => {
     return ( 
-        <p> { props.greeting } </p>
+        <p className="texto"> { props.greeting } </p>
     )
 }
 

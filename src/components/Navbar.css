@@ -2,22 +2,34 @@
     margin-top: 0px;
     height: 4rem;
     background-color: rgba(2, 16, 48, 0.945);
+    position: fixed;
+    width: 100vw;
+    color: aliceblue;
 }
 
 .brand {
     display: inline-block;
-    margin-right: 20%;
-    margin-left: 4%;
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: 5%;
+    width: 20vw;
 }
 
 .navbar-contenedor {
     list-style: none;
     display: inline;
+    align-items: center;
+    width: 80vw;
 }
 
 .item-navbar {
     display: inline;
     padding: 5%;
+    text-decoration: none;
+}
+
+.navbarLink {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
 }
