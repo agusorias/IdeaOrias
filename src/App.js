@@ -1,8 +1,5 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import "./components/CartWidget.css";
-import "./components/Navbar.css";
-import "./components/ItemListContainer.css";
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
@@ -13,7 +10,7 @@ function App() {
             </header>
             
             <div className="body">
-            <ItemListContainer greeting = "Catálogo"/>
+                <ItemListContainer greeting = "Catálogo"/>
             </div>
         </div>
     );

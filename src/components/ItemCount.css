@@ -1,23 +1,39 @@
 .contenedorBotones {
-    margin: 10%;
-
+    margin: 3%;
 }
 
 .textoCounter {
-    margin-left: 5%;
+    margin-left: 3%;
     text-align: center;
     display: inline;
 }
 
 .botonCounter {
     display: inline;
-    margin-left: 5%;
-    background-color: rgb(10, 5, 73);
-    color: white;
-    border-radius: 28px;
+    margin-left: 3%;
+    background-color: white;
+    color: rgb(10, 5, 73);
+    border-radius: 5px;
+    border-color: rgb(10, 5, 73);
+    border-style: solid;
 }
 
 .botonCounter:hover {
+    background-color: rgb(10, 5, 73);
+    color:white;
+}
+
+.botonAgregar {
+    display: block;
     background-color: white;
     color: rgb(10, 5, 73);
+    border-radius: 5px;
+    border-color: rgb(10, 5, 73);
+    border-style: solid;
+    margin: 3% 3% 3% 4%;
+}
+
+.botonAgregar:hover {
+    background-color: rgb(10, 5, 73);
+    color:white;
 }
