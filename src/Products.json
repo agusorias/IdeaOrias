@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Trapiche Malbec",
+        "id": 1,
+        "price": 810,
+        "image": "https://www.espaciovino.com.ar/media/default/0001/59/thumb_58137_default_big.jpeg",
+        "description": "Reserva Malbec" ,
+        "stock": 15
+    },
+    {
+        "name": "DV Catena",
+        "id": 2,
+        "price": 2000,
+        "image": "https://www.espaciovino.com.ar/media/default/0001/53/thumb_52813_default_big.jpeg",
+        "description": "Malbec Malbec" ,
+        "stock": 12
+    },
+    {
+        "name": "Luigi Bosca",
+        "id": 3,
+        "price": 1100,
+        "image": "https://media-verticommnetwork1.netdna-ssl.com/wines/luigi-bosca-malbec-1644657.jpg",
+        "description": "Malbec" ,
+        "stock": 11
+    }
+]
