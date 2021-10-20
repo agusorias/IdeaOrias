@@ -9,7 +9,7 @@ const ItemListContainer = (props) => {
     
     const [productos, setProductos] = useState([]);
 
-    const getData = (data) = new Promise((resolve, reject) => {
+    const getData = (data) => new Promise((resolve, reject) => {
         if (data) {
             resolve(data);
         } else {
@@ -30,7 +30,7 @@ const ItemListContainer = (props) => {
         <>
             <h1 className="texto"> { props.greeting } </h1> 
             <div>
-                {productos.map(producto => <ItemList item={producto}/>)}
+                <ItemList items={productos}/>
             </div>
         </>
     )

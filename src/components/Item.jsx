@@ -5,8 +5,8 @@ import ItemCount from './ItemCount';
 const Item = ({ item }) => {
 
     return ( 
-        <div>
-            <img src={item.image} alt={item.description}/>
+        <div className="contenedorItem">
+            <img className="imagen" src={item.image} alt={item.description}/>
             <h2>{item.name}</h2>
             <h4>${item.price}</h4>
             <p>{item.description}</p>
