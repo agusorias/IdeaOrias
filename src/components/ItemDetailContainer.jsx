@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import "./ItemDetailContainer.css";
 import Products from "../Products.json";
-import { ItemList } from "./ItemList";
+import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = (props) => {
 
@@ -25,7 +25,7 @@ const ItemDetailContainer = (props) => {
         <>
         <h1 className = "texto" > { props.greeting } </h1>  
         <div>
-        <ItemList items = { producto }/> 
+        <ItemDetail items = { producto }/> 
         </div> 
         </>
     )

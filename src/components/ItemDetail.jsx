@@ -2,7 +2,7 @@ import React from 'react';
 import "./ItemDetail.css";
 import ItemCount from './ItemCount';
 
-const Item = ({ item }) => {
+const ItemDetail = ({ item }) => {
 
     return ( 
         <div className="contenedorItem">
@@ -15,4 +15,4 @@ const Item = ({ item }) => {
     )
 }
 
-export default Item;
+export default ItemDetail;

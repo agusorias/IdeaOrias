@@ -1,7 +1,8 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from "react-router-dom"
 import Navbar from './components/Navbar';
-//import ItemListContainer from './components/ItemListContainer';
+import { Home } from './components/Home';
+import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
@@ -10,15 +11,24 @@ function App() {
             <header className = "App-header" >
                 <Navbar/>
             </header>
-            <Switch>
-                <Route exact path="/">
-                    <div className = "App" id="Aplicacion" >
-                        <div className="body">
-                            <ItemDetailContainer greeting = "Catálogo"/>
+            <div className = "body">
+                <Switch>
+                    <Route exact path="/">
+                        <div className="App">
+                            <Home/>
                         </div>
-                    </div>
-                </Route>
-            </Switch>
+                    </Route>
+                    <Route exact path="/tipo/:tipoID">
+                        <ItemListContainer/>
+                    </Route>
+                    <Route exact path="/producto/:productoID">
+                        <ItemDetailContainer/>
+                    </Route>
+                    <Route path="/*">
+                        <h1>404 not found.</h1>
+                    </Route>
+                </Switch>
+            </div>
         </BrowserRouter>
     );
 }
