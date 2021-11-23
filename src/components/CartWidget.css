@@ -1,5 +1,23 @@
-.contenedor-cart {
+/* .contenedor-cart {
     display: inline;
     float: inline-end;
     align-content: center;
+} */
+
+.cartWidget{
+    display: flex;
+    right: 30px;
+}
+#cartImg{
+    height: 40px;
+    filter: invert(1);
+}
+.totalItems{
+    position: relative;
+    top:20px;
+    right: 10px;
+    background-color: #008000;
+    padding: 0px 7px;
+    color: #ffffff9c;
+    border-radius: 100%;
 }
