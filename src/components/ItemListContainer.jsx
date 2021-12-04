@@ -57,12 +57,12 @@ function ItemListContainer(){
       const dataBase = getFirestore();
 
       if(categoriaItem===undefined){
-        const queryDB = dataBase.collection('Items')
+        const queryDB = dataBase.collection('items')
         queryDB.get().then((querySnapshot)=>{
           setItem(querySnapshot.docs.map(item=>( {id : item.id , ...item.data() })))
         })
       }else {
-        const queryDB = dataBase.collection('Items').where('categoria','==',categoriaItem)
+        const queryDB = dataBase.collection('items').where('categoria','==',categoriaItem)
         queryDB.get().then((querySnapshot)=>{
           setItem(querySnapshot.docs.map(item=>( {id : item.id , ...item.data() })))
         })

@@ -24,7 +24,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import CartWidget from '../CartWidget';
+import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 import "./NavBar.css";
 

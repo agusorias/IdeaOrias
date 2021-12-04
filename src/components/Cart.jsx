@@ -17,6 +17,7 @@ const Cart = () => {
             ...formData,
         })
     }
+
     function handleSubmit(e){
         e.preventDefault()
 
@@ -29,6 +30,7 @@ const Cart = () => {
         const db = getFirestore()
         const orders= db.collection('orders')
         orders.add(newOrder)
+        .then(resp => alert('¡Muchas gracias por comprar en Ecommerce!'+ "\r\n" + "\r\n" +'El ID de su compra es:'+ "\r\n" + resp.id))
         .finally(()=>{
             setFormData(initialState)
             clear()
